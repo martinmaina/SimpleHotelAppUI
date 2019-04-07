@@ -3,12 +3,14 @@
 {% block body %}
 
 	<header>
-		<nav id="navbar">
-			<div class="container">
-				<h1 class="logo"><a href="index.html">LOGO</a></h1>
+			<nav id="navbar">
+		<button class="show-hide" onclick="showhide()"><i class="fas fa-list"></i></button>
+		<div id="thisone">
+				<div class="container">
+				<a href="/index"><img class="logo" src="../static/Images/logo1.png" height=80px width=80px alt="LOGO"></a>
 			<ul>
-				<li><a href="{{ url_for('index') }}">Home</a></li>
-				<li><a  class="current" href="{{ url_for('about')}}">About</a></li>
+				<li><a href="{{ url_for('index')}}">Home</a></li>
+				<li><a class="current"  href="{{ url_for('about')}}">About</a></li>
 				<li><a href="{{ url_for('contact')}}">Contact</a></li>
 			</ul>
 			</div>

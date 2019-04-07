@@ -7,23 +7,26 @@
 {% block body %}
 
 	<header>
-		<nav id="navbar">
-			<div class="container">
-				<h1 class="logo"><a href="index.html">LOGO</a></h1>
+			<nav id="navbar">
+		<button class="show-hide" onclick="showhide()"><i class="fas fa-list"></i></button>
+		<div id="thisone">
+				<div class="container">
+				<a href="/index"><img class="logo" src="../static/Images/logo1.png" height=80px width=80px alt="LOGO"></a>
 			<ul>
-				<li><a class="current" href="{{ url_for('index') }}">Home</a></li>
-				<li><a href="{{ url_for('about') }}">About</a></li>
+				<li><a  class="current" href="{{ url_for('index')}}">Home</a></li>
+				<li><a href="{{ url_for('about')}}">About</a></li>
 				<li><a href="{{ url_for('contact')}}">Contact</a></li>
 			</ul>
 			</div>
 		</nav>
+		
 		<div id="showcase">
 			<div class="container">
 				<div class="showcase-content">
 					<h1><span class="text-primary">Enjoy</span>Your stay</h1>
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-					<a class="btn" href="about.html">About our Hotel</a>
+					<a class="btn" href="/about">About our Hotel</a>
 				</div>
 			</div>
 		</div>
@@ -40,7 +43,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-			<a class="btn btn-light" href="about.html">Read More</a>
+			<a class="btn btn-light" href="/about">Read More</a>
 		</div>
 	</section>
 
