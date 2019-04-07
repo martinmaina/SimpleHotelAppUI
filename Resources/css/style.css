@@ -41,6 +41,7 @@ p{
 	background: #333;
 	padding: 13px 20px;
 	border:none;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -98,9 +99,16 @@ p{
 
 #navbar .logo{
 	float: left;
-	padding-top: 20px;
+	padding: 10px 0;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
-
+#navbar .show-hide{
+	display: none;
+}
+#navbar #thisone{
+	display: block;
+}
 #navbar ul{
 	list-style: none;
 	float: right;
@@ -112,7 +120,7 @@ p{
 
 #navbar ul li a{
 	display: block;
-	padding: 20px;
+	padding: 25.95px;
 	text-align: center;
 }
 

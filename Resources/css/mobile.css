@@ -7,6 +7,16 @@ float: none;
 text-align: center;
 }
 
+#navbar .logo {
+	display: none;
+}
+#navbar #thisone{
+	display: none;
+}
+#navbar .show-hide{
+	display: block;
+	float: right;
+}
 #navbar ul, #navbar ul li{
 	float: none;
 }
@@ -75,14 +85,28 @@ text-align: center;
 	display: block;
 	float: none;
 	width: 100%;
-
-
+}
+#contact-info .container .box p{
+	margin-top: -10px;
 }
 
 .box{
 	padding: 20px;
 }
-
+.box{
+	float: none;
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+	border:1px solid green;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+}
+.box i{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
 #features {
 	height: 100%;
 }
